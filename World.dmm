@@ -1,0 +1,32 @@
+"a" = (/turf/nature/grass/grass1,/area)
+"b" = (/turf/nature/dirt/dirt1,/area)
+"c" = (/obj/tree/tree1,/turf/nature/dirt/dirt1,/area)
+"d" = (/obj/tree/tree1,/turf/nature/grass/grass1,/area)
+
+(1,1,1) = {"
+aabbbaaaaabbbbbbbbaaaabaa
+bbabbaabbabababaabababbaa
+baaaaaabbaaaaaaaaaaaaabaa
+bbaaaaaaaabaaabaaaaaaaaaa
+aabaaaaaaaabaaaaaaaaaaaaa
+aabaaaaaaaababaaaaaaaaaaa
+abaaacabbabababbaaaaaaaaa
+baaaababbaaaaaaaaabaaaaaa
+baaaaaababbbaaaaaaabbbaaa
+bbbbabbaabaabaaabaabbaaaa
+abbbbbbbabbbaaaaaaaaaaaaa
+aabbaaaabaabbabaaaaaaaaaa
+ababbbbbabbabbaaaaabaaaaa
+aaaaaabababaaaaaaaaaaabaa
+aaababaabbaabbbabaaabaabb
+aabaaaaaaababbaaaaaaaaaaa
+aababaabaaaaaaaabaaaaaaaa
+babbbaaaaaaaaaaaaaabaaaaa
+aaaaaabbabaabaaaaaaadabaa
+aaaaaaabaabbbbbbaaaaaaaaa
+abbababbbbbabaaaaaaaaaaaa
+aaabbbbbbbbbbabbabaabbaba
+aababbaaabbbbbbbbbbbbbbaa
+adbbbbbbbbbbbbbaaaabbabab
+aaaabbbbbbabaababbaaaaaaa
+"}

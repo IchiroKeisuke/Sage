@@ -1,0 +1,27 @@
+// DM Environment file for Sage.dme.
+// All manual changes should be made outside the BEGIN_ and END_ blocks.
+// New source code should be placed in .dm files: choose File/New --> Code File.
+
+// BEGIN_INTERNALS
+/*
+FILE: 
+*/
+// END_INTERNALS
+
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+// END_FILE_DIR
+
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+
+// BEGIN_INCLUDE
+#include "0 Login Journal.dm"
+#include "0.1 Map Tiles.dm"
+#include "1.1 Characters.dm"
+#include "99 Tile Edges.dm"
+#include "Settings.dm"
+#include "Skin.dmf"
+#include "World.dmm"
+// END_INCLUDE
+

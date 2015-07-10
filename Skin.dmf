@@ -1,0 +1,230 @@
+macro "macro"
+	elem 
+		name = "North+REP"
+		command = ".north"
+		is-disabled = false
+	elem 
+		name = "South+REP"
+		command = ".south"
+		is-disabled = false
+	elem 
+		name = "East+REP"
+		command = ".east"
+		is-disabled = false
+	elem 
+		name = "West+REP"
+		command = ".west"
+		is-disabled = false
+	elem 
+		name = "Northeast+REP"
+		command = ".northeast"
+		is-disabled = false
+	elem 
+		name = "Northwest+REP"
+		command = ".northwest"
+		is-disabled = false
+	elem 
+		name = "Southeast+REP"
+		command = ".southeast"
+		is-disabled = false
+	elem 
+		name = "Southwest+REP"
+		command = ".southwest"
+		is-disabled = false
+	elem 
+		name = "Center+REP"
+		command = ".center"
+		is-disabled = false
+
+
+menu "menu"
+	elem 
+		name = "&Quit"
+		command = ".quit"
+		category = "&File"
+		is-checked = false
+		can-check = false
+		group = ""
+		is-disabled = false
+		saved-params = "is-checked"
+
+
+window "default"
+	elem "default"
+		type = MAIN
+		pos = 143,0
+		size = 1121x678
+		anchor1 = none
+		anchor2 = none
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = #000000
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = true
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		on-size = ""
+		title = ""
+		titlebar = true
+		statusbar = false
+		can-close = true
+		can-minimize = true
+		can-resize = true
+		is-pane = false
+		is-minimized = false
+		is-maximized = false
+		can-scroll = none
+		icon = ""
+		image = ""
+		image-mode = stretch
+		keep-aspect = false
+		transparent-color = none
+		alpha = 255
+		macro = "macro"
+		menu = "menu"
+		on-close = ""
+	elem "button1"
+		type = BUTTON
+		pos = 228,504
+		size = 60x20
+		anchor1 = 20,74
+		anchor2 = 26,77
+		font-family = ""
+		font-size = 0
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #191919
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = line
+		drop-zone = false
+		right-click = false
+		saved-params = "is-checked"
+		on-size = ""
+		text = "Chat"
+		image = ""
+		command = ""
+		is-flat = true
+		stretch = false
+		is-checked = false
+		group = ""
+		button-type = pushbutton
+	elem "input1"
+		type = INPUT
+		pos = 8,504
+		size = 216x20
+		anchor1 = 1,74
+		anchor2 = 20,77
+		font-family = ""
+		font-size = 0
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #242424
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = line
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		command = ""
+		multi-line = false
+		is-password = false
+		no-command = false
+	elem "output1"
+		type = OUTPUT
+		pos = 8,528
+		size = 848x144
+		anchor1 = 1,78
+		anchor2 = 76,99
+		font-family = "Verdana"
+		font-size = 9
+		font-style = ""
+		text-color = #ffffff
+		background-color = #161616
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = true
+		border = line
+		drop-zone = false
+		right-click = false
+		saved-params = "max-lines"
+		on-size = ""
+		link-color = #0000ff
+		visited-color = #ff00ff
+		style = ""
+		enable-http-images = false
+		max-lines = 1000
+		image = ""
+	elem "info1"
+		type = INFO
+		pos = 865,0
+		size = 256x678
+		anchor1 = 77,0
+		anchor2 = 100,100
+		font-family = "Verdana"
+		font-size = 9
+		font-style = ""
+		text-color = #d1d1d1
+		background-color = #161616
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = true
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		highlight-color = #277bd8
+		tab-text-color = #4a4a4a
+		tab-background-color = #1f1f1f
+		tab-font-family = "Calibri"
+		tab-font-size = 11
+		tab-font-style = ""
+		allow-html = true
+		multi-line = true
+		on-show = ""
+		on-hide = ""
+		on-tab = ""
+		prefix-color = none
+		suffix-color = none
+	elem "map1"
+		type = MAP
+		pos = 8,0
+		size = 847x488
+		anchor1 = 1,1
+		anchor2 = 76,73
+		font-family = "Calibri"
+		font-size = 9
+		font-style = ""
+		text-color = none
+		background-color = none
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = true
+		border = line
+		drop-zone = true
+		right-click = false
+		saved-params = "icon-size"
+		on-size = ""
+		icon-size = 32
+		text-mode = false
+		letterbox = false
+		zoom = 1
+		on-show = ""
+		on-hide = ""
+		style = ""
+
