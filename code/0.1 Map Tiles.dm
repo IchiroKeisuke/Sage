@@ -1,6 +1,6 @@
 obj
 	tree
-		icon='Trees.dmi'
+		icon='icons/Trees.dmi'
 		layer=40
 		pixel_x=-46
 		density=1
@@ -8,7 +8,7 @@ obj
 turf
 	nature
 		grass
-			icon='Grass.dmi'
+			icon='icons/Grass.dmi'
 			grass1
 				icon_state="grass1 a"
 				layer=2
@@ -16,7 +16,7 @@ turf
 					..()
 					icon_state=pick("grass1 a","grass1 b")
 		dirt
-			icon='Dirt.dmi'
+			icon='icons/Dirt.dmi'
 			New()
 				..()
 				if(edge_state!="")create_edging(src)

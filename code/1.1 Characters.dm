@@ -3,4 +3,4 @@ world
 mob
 	player
 		layer=40
-		icon='Mob.dmi'
+		icon='icons/Mob.dmi'
