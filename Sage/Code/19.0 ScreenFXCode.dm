@@ -1,0 +1,18 @@
+mob
+	proc
+		simplefadein(var/delay,var/time)
+			if(usr.client)
+				usr.client.screen_create("Fade",'ScreenFX.dmi',"fade")
+				usr.client.screen_set("Fade",255)
+				spawn(delay)
+					usr.client.screen_fade("Fade",0,time)
+					spawn(time)
+					usr.client.screen_destroy("Fade")
+		simplefadeout(var/delay,var/time)
+			if(usr.client)
+				usr.client.screen_create("Fade2",'ScreenFX.dmi',"fade")
+				usr.client.screen_set("Fade2",0)
+				spawn(delay)
+					usr.client.screen_fade("Fade2",255,time)
+					spawn(time)
+					usr.client.screen_destroy("Fade2")

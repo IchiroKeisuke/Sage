@@ -1,0 +1,141 @@
+obj
+	particle_system
+		New(var/mob/M)
+			owner=M
+			..()
+			spawn(0)make_particles()
+		var
+			obj/particle
+			system_life=12
+			spawn_rate=2
+			min_x=-16
+			max_x=16
+			min_y=-16
+			max_y=16
+			start_alpha=255
+			end_alpha=0
+			max_life=5
+			min_life=5
+		proc
+			make_particles()
+				var/x=0
+				while(x<system_life)
+					x++
+					spawn(0)
+						var/obj/O=new src.particle(owner.loc)
+						O.alpha=start_alpha
+						O.step_x=owner.step_x
+						O.step_y=owner.step_y
+						animate(O,pixel_x=pixel_x+rand(min_x,max_x),pixel_y=pixel_y+rand(min_y,max_y),alpha=end_alpha,rand(min_life,max_life))
+					sleep(spawn_rate)
+		health
+			particle=/obj/particles/health
+			spawn_rate=0.5
+			system_life=15
+			max_life=7
+			min_x=-20
+			max_x=20
+			min_y=20
+			max_y=30
+		energy
+			particle=/obj/particles/energy
+			spawn_rate=0.5
+			system_life=15
+			max_life=7
+			min_x=-20
+			max_x=20
+			min_y=20
+			max_y=30
+
+obj
+	particles
+		layer=50
+		icon='particles.dmi'
+		health
+			pixel_x=-6
+			pixel_y=-12
+			icon_state="health"
+			New()
+				..()
+				pixel_x=rand(-12,0)
+				pixel_y=rand(-10,20)
+		energy
+			pixel_x=-6
+			pixel_y=-12
+			icon_state="energy"
+			New()
+				..()
+				pixel_x=rand(-12,0)
+				pixel_y=rand(-10,20)
+
+
+
+
+obj
+	layer=11
+	effects
+		small_effects
+			stat_effects
+				layer=60
+				icon='smalleffects.dmi'
+				pixel_x=8
+				pixel_y=24
+				New()
+					flick(src,src.icon_state)
+					src.step_x=usr.step_x
+					src.step_y=usr.step_y
+					var/x=5
+					while(x>0)
+						sleep(1)
+						alpha-=30
+						x--
+					del src
+				def_up
+					icon_state="def up"
+				def_down
+					icon_state="def down"
+			ghost_image
+				icon=null
+				New(var/mob/M)
+					ghost(M)
+				proc/ghost(var/mob/M)
+					set background=1
+					src.icon=M.icon
+					src.overlays=M.overlays
+					src.icon_state=M.icon_state
+					src.loc=M.loc
+					src.pixel_x=M.pixel_x
+					src.pixel_y=M.pixel_y
+					src.step_x=M.step_x
+					src.step_y=M.step_y
+					src.dir=M.dir
+					var/x=0
+					while(x<5)
+						x++
+						alpha-=30
+						sleep(1)
+					del src
+			blood
+				icon_state="blood01"
+				New()
+					..()
+					pixel_x=rand(-16,16)
+					pixel_y=rand(-16,16)
+					icon_state=pick("blood01","blood02","blood03","blood04","blood05","blood06")
+					alpha=rand(80,150)
+					spawn(rand(50,60))del src
+			body
+				icon=null
+				New(var/mob/M)
+					icon=M.icon
+					icon_state="dead"
+					src.loc=M.loc
+					var/x=10
+					while(x>0)
+						x--
+						sleep(5)
+					x=10
+					while(x>0)
+						alpha-=10
+						sleep(1)
+					del src

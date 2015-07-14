@@ -1,0 +1,67 @@
+// DM Environment file for Sage.dme.
+// All manual changes should be made outside the BEGIN_ and END_ blocks.
+// New source code should be placed in .dm files: choose File/New --> Code File.
+
+// BEGIN_INTERNALS
+/*
+FILE: 
+*/
+// END_INTERNALS
+
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+#define FILE_DIR "GUI"
+#define FILE_DIR "Icons"
+#define FILE_DIR "Sound"
+// END_FILE_DIR
+
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+
+// BEGIN_INCLUDE
+#include "Interface.dmf"
+#include "Map.dmm"
+#include "Code\0 Map Loader.dm"
+#include "Code\0.001 Schedule.dm"
+#include "Code\0.002 Settings.dm"
+#include "Code\0.01 WorldSystems.dm"
+#include "Code\0.02 MapTiles.dm"
+#include "Code\1.0 Characters.dm"
+#include "Code\1.0 Mechanics.dm"
+#include "Code\10 HUD System.dm"
+#include "Code\15 Skills.dm"
+#include "Code\16 SkillCards.dm"
+#include "Code\17 Items.dm"
+#include "Code\18 CharacterSheet.dm"
+#include "Code\18.0 InventorySystem.dm"
+#include "Code\18.00 Popups.dm"
+#include "Code\19.0 ScreenFX.dm"
+#include "Code\19.0 ScreenFXCode.dm"
+#include "Code\19.0 SharpEdge.dm"
+#include "Code\2.0 Chat.dm"
+#include "Code\2.0 small effects.dm"
+#include "Code\20.0 InterfaceScript.dm"
+#include "Code\20.0 Notify.dm"
+#include "Code\20.00 Pathfinding.dm"
+#include "Code\21 Menu Script.dm"
+#include "Code\5.0 Stat.dm"
+#include "Code\6.0 Basic Combat.dm"
+#include "Code\6.0 Character Progression.dm"
+#include "Code\6.0 Effects.dm"
+#include "Code\7 GUI Programming.dm"
+#include "Code\7 Tutorial.dm"
+#include "Code\8 Sound System.dm"
+#include "Code\8.5 Save System.dm"
+#include "Code\9 Resources.dm"
+#include "Code\9.5 Construction.dm"
+#include "Code\9.5 Crafting.dm"
+#include "Code\9.6 PreBuilt Structures.dm"
+#include "Code\9.7 Level System.dm"
+#include "Code\9.8 Training.dm"
+#include "Code\9.9 Mobs.dm"
+#include "Code\9.99 Admin.dm"
+#include "Code\9.999 Collectables.dm"
+#include "Code\Keyboard.dm"
+#include "Code\Text.dm"
+// END_INCLUDE
+
