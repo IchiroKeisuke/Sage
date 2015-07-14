@@ -67,81 +67,81 @@ turf
 					flag_sw=TRUE
 					all_test++
 				if(all_test>=3)
-					var/icon/I=icon(OT.icon,OT.edge_all_state)
+					var/image/I=image(OT.icon,T,OT.edge_all_state,OT.layer,SOUTH)
 					T.overlays+=I
 					return
 				if(flag_nw&&flag_ne)
-					var/icon/I=icon(OT.icon,OT.edge_corner_state,SOUTH)
+					var/image/I=image(OT.icon,T,OT.edge_corner_state,OT.layer,SOUTH)
 					T.overlays+=I
 					return
 				if(flag_sw&&flag_se)
-					var/icon/I=icon(OT.icon,OT.edge_corner_state,NORTH)
+					var/image/I=image(OT.icon,T,OT.edge_corner_state,OT.layer,NORTH)
 					T.overlays+=I
 					return
 				if(flag_sw&&flag_nw)
-					var/icon/I=icon(OT.icon,OT.edge_corner_state,EAST)
+					var/image/I=image(OT.icon,T,OT.edge_corner_state,OT.layer,EAST)
 					T.overlays+=I
 					return
 				if(flag_se&&flag_ne)
-					var/icon/I=icon(OT.icon,OT.edge_corner_state,WEST)
+					var/image/I=image(OT.icon,T,OT.edge_corner_state,OT.layer,WEST)
 					T.overlays+=I
 					return
 				if(flag_nw&&OT.edge_east&&OT.edge_south)
-					var/icon/I=icon(OT.icon,OT.edge_corner_state,SOUTHEAST)
+					var/image/I=image(OT.icon,T,OT.edge_corner_state,OT.layer,SOUTHEAST)
 					T.overlays+=I
 					flag_n=FALSE
 					flag_w=FALSE
 				if(flag_ne&&OT.edge_west&&OT.edge_south)
-					var/icon/I=icon(OT.icon,OT.edge_corner_state,SOUTHWEST)
+					var/image/I=image(OT.icon,T,OT.edge_corner_state,OT.layer,SOUTHWEST)
 					T.overlays+=I
 					flag_n=FALSE
 					flag_e=FALSE
 				if(flag_sw&&OT.edge_east&&OT.edge_north)
-					var/icon/I=icon(OT.icon,OT.edge_corner_state,NORTHEAST)
+					var/image/I=image(OT.icon,T,OT.edge_corner_state,OT.layer,NORTHEAST)
 					T.overlays+=I
 					flag_s=FALSE
 					flag_w=FALSE
 				if(flag_se&&OT.edge_west&&OT.edge_north)
-					var/icon/I=icon(OT.icon,OT.edge_corner_state,NORTHWEST)
+					var/image/I=image(OT.icon,T,OT.edge_corner_state,OT.layer,NORTHWEST)
 					T.overlays+=I
 					flag_s=FALSE
 					flag_e=FALSE
 			if(flag_n&&OT.edge_south)
-				var/icon/I=icon(OT.icon,OT.edge_state,SOUTH)
+				var/image/I=image(OT.icon,T,OT.edge_state,OT.layer,SOUTH)
 				T.overlays+=I
 			if(flag_s&&OT.edge_north)
-				var/icon/I=icon(OT.icon,OT.edge_state,NORTH)
+				var/image/I=image(OT.icon,T,OT.edge_state,OT.layer,NORTH)
 				T.overlays+=I
 			if(flag_w&&OT.edge_east)
-				var/icon/I=icon(OT.icon,OT.edge_state,EAST)
+				var/image/I=image(OT.icon,T,OT.edge_state,OT.layer,EAST)
 				T.overlays+=I
 			if(flag_e&&OT.edge_west)
-				var/icon/I=icon(OT.icon,OT.edge_state,WEST)
+				var/image/I=image(OT.icon,T,OT.edge_state,OT.layer,WEST)
 				T.overlays+=I
 			if(OT.edge_corners)
 				O.loc=T
 				step(O,SOUTHWEST)
 				for(var/turf/TT in range(0,O))
 					if(istype(TT,OT)&&!flag_sw&&!fs&&!fw&&OT.edge_east&&OT.edge_north)
-						var/icon/I=icon(OT.icon,OT.edge_state,NORTHEAST)
+						var/image/I=image(OT.icon,T,OT.edge_state,OT.layer,NORTHEAST)
 						T.overlays+=I
 				O.loc=T
 				step(O,SOUTHEAST)
 				for(var/turf/TT in range(0,O))
 					if(istype(TT,OT)&&!flag_se&&!fs&&!fe&&OT.edge_west&&OT.edge_north)
-						var/icon/I=icon(OT.icon,OT.edge_state,NORTHWEST)
+						var/image/I=image(OT.icon,T,OT.edge_state,OT.layer,NORTHWEST)
 						T.overlays+=I
 				O.loc=T
 				step(O,NORTHWEST)
 				for(var/turf/TT in range(0,O))
 					if(istype(TT,OT)&&!flag_nw&&!fn&&!fw&&OT.edge_east&&OT.edge_south)
-						var/icon/I=icon(OT.icon,OT.edge_state,SOUTHEAST)
+						var/image/I=image(OT.icon,T,OT.edge_state,OT.layer,SOUTHEAST)
 						T.overlays+=I
 				O.loc=T
 				step(O,NORTHEAST)
 				for(var/turf/TT in range(0,O))
 					if(istype(TT,OT)&&!flag_ne&&!fn&&!fe&&OT.edge_west&&OT.edge_south)
-						var/icon/I=icon(OT.icon,OT.edge_state,SOUTHWEST)
+						var/image/I=image(OT.icon,T,OT.edge_state,OT.layer,SOUTHWEST)
 						T.overlays+=I
 		create_edging(var/turf/T)
 			var/obj/O=new/obj()
