@@ -9,7 +9,7 @@
 world
 	fps=24
 	name="Sage"
-	status="ALPHA 0.2.1"
+	status="ALPHA 0.3.2"
 	view="23x15"
 
 
