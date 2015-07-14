@@ -1,43 +1,60 @@
 macro "macro"
 	elem 
-		name = "North+REP"
-		command = ".north"
+		name = "CENTER+REP"
+		command = ".center"
 		is-disabled = false
 	elem 
-		name = "South+REP"
-		command = ".south"
-		is-disabled = false
-	elem 
-		name = "East+REP"
-		command = ".east"
-		is-disabled = false
-	elem 
-		name = "West+REP"
-		command = ".west"
-		is-disabled = false
-	elem 
-		name = "Northeast+REP"
+		name = "NORTHEAST+REP"
 		command = ".northeast"
 		is-disabled = false
 	elem 
-		name = "Northwest+REP"
-		command = ".northwest"
-		is-disabled = false
-	elem 
-		name = "Southeast+REP"
+		name = "SOUTHEAST+REP"
 		command = ".southeast"
 		is-disabled = false
 	elem 
-		name = "Southwest+REP"
+		name = "SOUTHWEST+REP"
 		command = ".southwest"
 		is-disabled = false
 	elem 
-		name = "Center+REP"
-		command = ".center"
+		name = "NORTHWEST+REP"
+		command = ".northwest"
+		is-disabled = false
+	elem 
+		name = "WEST+REP"
+		command = ".west"
+		is-disabled = false
+	elem 
+		name = "NORTH+REP"
+		command = ".north"
+		is-disabled = false
+	elem 
+		name = "EAST+REP"
+		command = ".east"
+		is-disabled = false
+	elem 
+		name = "SOUTH+REP"
+		command = ".south"
+		is-disabled = false
+	elem 
+		name = "L"
+		command = "local_chat"
+		is-disabled = false
+	elem 
+		name = "O"
+		command = "global_chat"
 		is-disabled = false
 
 
 menu "menu"
+	elem 
+		name = "&File"
+		command = ""
+		category = ""
+		is-checked = false
+		can-check = false
+		group = ""
+		is-disabled = false
+		saved-params = "is-checked"
 	elem 
 		name = "&Quit"
 		command = ".quit"
