@@ -128,7 +128,7 @@ window "default"
 		on-size = ""
 		text = "Chat"
 		image = ""
-		command = ""
+		command = "toggle-chat"
 		is-flat = true
 		stretch = false
 		is-checked = false
@@ -154,16 +154,16 @@ window "default"
 		right-click = false
 		saved-params = ""
 		on-size = ""
-		command = ""
+		command = "chat"
 		multi-line = false
 		is-password = false
 		no-command = false
 	elem "output1"
 		type = OUTPUT
 		pos = 8,528
-		size = 848x144
+		size = 808x144
 		anchor1 = 1,78
-		anchor2 = 76,99
+		anchor2 = 73,99
 		font-family = "Verdana"
 		font-size = 9
 		font-style = ""
@@ -220,9 +220,9 @@ window "default"
 	elem "map1"
 		type = MAP
 		pos = 8,0
-		size = 847x488
-		anchor1 = 1,1
-		anchor2 = 76,73
+		size = 808x488
+		anchor1 = 1,0
+		anchor2 = 73,72
 		font-family = "Calibri"
 		font-size = 9
 		font-style = ""
@@ -232,7 +232,7 @@ window "default"
 		is-disabled = false
 		is-transparent = false
 		is-default = true
-		border = line
+		border = none
 		drop-zone = true
 		right-click = false
 		saved-params = "icon-size"

@@ -1,7 +1,16 @@
+//version number system
+//------------------------
+//the first number indicates a major release or increase in features. Do not change.
+//the second number indicates a increase in the number of features. Increment if you add features.
+//the third number indiciates bug fixes. Increment if you add bug fixes.
+
+
+
 world
 	fps=24
 	name="Sage"
-	status="Version 0.1"
-	view="19x13"
+	status="ALPHA 0.2.1"
+	view="23x15"
+
 
 client/command_text = ".alt"
