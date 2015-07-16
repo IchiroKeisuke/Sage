@@ -192,7 +192,7 @@ mob
 			You can click on any category to display listed construction items. Your character will learn how to construct more advanced buildings as their construction skill level rises. So don't worry if you dont' see very many things just yet.
 			<br/><br/>
 			<u>Crafting</u><br/>
-			The crafting system in rice is very easy and straightforward. Like construction, more recipes are learned over time.
+			The crafting system in Sage is very easy and straightforward. Like construction, more recipes are learned over time.
 
 			<br/><br/>To craft an item, build a crafting bench at your home(or use a public one) and click on the desired recipe, make sure you have the resources that are listed and then click craft to craft your item. You can craft in bulk by specifying a quantity.
 

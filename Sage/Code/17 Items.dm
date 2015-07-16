@@ -241,11 +241,11 @@ obj
 					consume()
 						set category=null
 						usr << 'Eat.wav'
-				ricebowl
-					icon_state="ricebowl"
-					name="Ricebowl"
+				Sagebowl
+					icon_state="Sagebowl"
+					name="Sagebowl"
 					consume()
-						usr << "<font color=teal>You consume the rice! (+10%Nutrition)"
+						usr << "<font color=teal>You consume the Sage! (+10%Nutrition)"
 						src.loc=null
 						usr.update_inventory()
 						del src

@@ -1,9 +1,33 @@
+proc//Proclaims proc
+	Overwrite_Text(msg as text, snippet as text, position as num, secposition)//This is a modifyed version of flicks proc called "Insert_Text"
+		msg = copytext(msg, 1, position) + snippet + copytext(msg, secposition)//This is complicated, yet simple.
+		return msg//This sends the message back what whatever called it.
 mob
 	var
 		chat_type="local"
 		list/ignore_list=list()
 		list/party=list()
 		mob/chat_respond
+		emoticons=1
+	proc
+		emoticon_filter(var/x)
+			if(emoticons)
+				while(findtext(x,":)")!=0)
+					x=Overwrite_Text(x,"\icon[icon('Smiley.dmi',":)")]",findtext(x,":)"),findtext(x,":)")+2)
+				while(findtext(x,":D")!=0)
+					x=Overwrite_Text(x,"\icon[icon('Smiley.dmi',":D")]",findtext(x,":D"),findtext(x,":D")+2)
+				while(findtext(x,":(")!=0)
+					x=Overwrite_Text(x,"\icon[icon('Smiley.dmi',":(")]",findtext(x,":("),findtext(x,":(")+2)
+				while(findtext(x,":p")!=0)
+					x=Overwrite_Text(x,"\icon[icon('Smiley.dmi',":p")]",findtext(x,":p"),findtext(x,":p")+2)
+				while(findtext(x,";)")!=0)
+					x=Overwrite_Text(x,"\icon[icon('Smiley.dmi',";)")]",findtext(x,";)"),findtext(x,";)")+2)
+				while(findtext(x,":o")!=0)
+					x=Overwrite_Text(x,"\icon[icon('Smiley.dmi',":o")]",findtext(x,":o"),findtext(x,":o")+2)
+
+				return x
+			else
+				return x
 	verb
 		toggle_chat()
 			set category=null
@@ -46,23 +70,25 @@ mob
 				usr << output("Cannot find user : [tar]","Chat.chat")
 		chat(t as text)
 			set category=null
+			t="[html_encode(t)]"
+			t=emoticon_filter(t)
 			switch(chat_type)
 				if("local")
 					for(var/mob/M in range(6))
-						if(!(usr in M.ignore_list))M << output("<b>[usr] : [html_encode(t)]","chat")
+						if(!(usr in M.ignore_list))M << output("<b>[usr] : [t]","chat")
 
 				//	for(var/mob/M in range(6))
 			//			chatmessage(M,"[src.name]: [html_encode(t)]","chatpanel")
 					new/obj/effects/small_effects/chat_notification(loc,usr)
 				else
 					for(var/mob/MM in world)
-						if(!(usr in MM.ignore_list))MM << output("<i>[usr] : [html_encode(t)]","chat")
+						if(!(usr in MM.ignore_list))MM << output("<i>[usr] : [t]","chat")
 				//	chatmessage(world,"[src.name]: [html_encode(t)]","chatpanel")
 		party_chat(t as text)
 			set category=null
 			src << output("<b>[usr] : [html_encode(t)]","partychat")
 			for(var/mob/M in src.party)
-				if(!(usr in M.ignore_list))M << output("<b>[usr] : [html_encode(t)]","PartyChat.partychat")
+				if(!(usr in M.ignore_list))M << output("<b>[usr] : [t]","PartyChat.partychat")
 mob
 	var
 		ignore_open=FALSE

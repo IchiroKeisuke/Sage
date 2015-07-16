@@ -39,12 +39,12 @@ mob
 			var/A=input("name")as text
 			usr.name=A
 		test_save()
-			var/savefile/F=new()
+			var/savefile/F=new("Players/[src.ckey]")
 			src.export_values(F)
-			client.Export(F)
+			//client.Export(F)
 		test_load()
 			//var/loca=src.loc
-			var/savefile/F=new(client.Import())
+			var/savefile/F=new("Players/[src.ckey]")
 			if(F)
 				if(src.compare_values(F))
 					src.import_values(F)

@@ -9,9 +9,9 @@ mob/proc
 
 world
 	fps=24
-	name="Rice(RPG)"
+	name="SAGE"
 	status="Open Testing Session"
-	hub="IchiroKeisuke.Rice"
+	hub="IchiroKeisuke.Sage"
 	view="19x11"
 	icon_size=32
 	mob=/mob/character
@@ -40,7 +40,7 @@ mob
 			spawn(2)AI_activation_loop()
 			spawn(5)regen()
 		login_message()
-			var/B=usr.popup("<head><title>The following is a In-Development ALPHA</title></head>","Welcome to Rice! <br/><font color=yellow>Expect bugs!</font color=yellow><br/>This game is far from completion and you should not expect a smooth experience at this point in time! Please approach the game knowing that - in time - the game will improve and mature. <br>Thank you!<br>-IchiroKeisuke(Main Developer)<br/>")
+			var/B=usr.popup("<head><title>The following is a In-Development ALPHA</title></head>","Welcome to Sage! <br/><font color=yellow>Expect bugs!</font color=yellow><br/>This game is far from completion and you should not expect a smooth experience at this point in time! Please approach the game knowing that - in time - the game will improve and mature. <br>Thank you!<br>-IchiroKeisuke(Main Developer)<br/>")
 			usr << browse(B,"window=Welcome2;size=450x325;titlebar=1;border=0;can_close=0;can_resize=0;can_minimize=0;")
 			usr.popup_response()
 			usr << browse(null,"window=Welcome2")

@@ -45,9 +45,9 @@ turf
 					I.maptext="<font color=black><b><font size=1> Level : </b> [M.level] \n <b>Class : </b> [M.class]]"
 					M << I
 					M << II
-		rice_title
+		Sage_title
 			icon='win_bg.dmi'
-			icon_state="rice"
+			icon_state="Sage"
 			layer=90
 		bg
 			layer=90
@@ -55,18 +55,18 @@ turf
 			pixel_y=-8
 			New()
 				..()
-				alpha=240
+				//alpha=240
 				var/obj/O=new/obj()
 				O.layer=91
-				O.maptext="<font size=1><font color=white><b><center>Public Alpha \[0.5\]</center></b>\n <font color=#909090>You can read the guide by clicking the menu at the right of the program labeled with a question mark. \n\n <font color=#808080>You may choose to create a new character, load a pre-exisiting one or delete your old character for a fresh start."
+				O.maptext={"<font size=1><font color=white><b>Recent News</b>\n \n <font color=white>Alpha 1.0.0 Released! \n\n <font color=yellow>Welcome back to Sage!"}
 				O.maptext_width=300
 				O.maptext_height=160
 				O.pixel_x=8
-				O.pixel_y=34
+				O.pixel_y=50
 				src.overlays+=O
-				var/obj/OO=new/obj()
+			/*	var/obj/OO=new/obj()
 				OO.layer=91
-				OO.maptext="<font size=5><center><font color=black>Rice"
+				OO.maptext="<font size=5><center><font color=black>Sage"
 				OO.maptext_width=460
 				OO.maptext_height=160
 				OO.pixel_x=50
@@ -79,7 +79,7 @@ turf
 				OOO.maptext_height=160
 				OOO.pixel_x=-150
 				OOO.pixel_y=270
-				src.overlays+=OOO
+				src.overlays+=OOO*/
 		selectable_bg
 			layer=91
 			icon='HUD.dmi'

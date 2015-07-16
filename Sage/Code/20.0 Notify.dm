@@ -5,6 +5,7 @@ client
 			N.string=strin
 			N.portrait=portrai
 			N.time=tim
+			mob.play_sound('blop.wav')
 			N.activate(mob)
 
 
