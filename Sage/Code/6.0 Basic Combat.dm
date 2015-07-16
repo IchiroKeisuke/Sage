@@ -1,3 +1,6 @@
+mob
+	var
+		rogue=0
 obj
 	effects
 		layer=20
@@ -137,6 +140,7 @@ mob
 				death()
 		damaged(var/dmg,var/mob/attacker)
 			if(!combat_zone)return
+			if(!src.rogue&&!attacker.rogue)return
 			spawn(0)new/obj/effects/damage_number(src.loc,0,0,dmg)
 			var/dira=src.dir
 			src.pixel_step_away(src,attacker)

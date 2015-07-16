@@ -30,20 +30,24 @@ mob
 			usr.refresh_inventory()
 			usr.redraw_character()
 		redraw_character()
-			usr.overlays=null
-			switch(usr.skin_tone)
-				if(1)usr.icon='Base.dmi'
-				if(2)usr.icon='Base2.dmi'
+			src.overlays=null
+			switch(src.skin_tone)
+				if(1)src.icon='Base.dmi'
+				if(2)src.icon='Base2.dmi'
 			for(var/obj/inventory/items/equippable/E in usr.contents)
 				if(E.equip==1)
 					var/image/I=image(E.icon)
 					I.icon+=E.dye_color
-					usr.overlays+=I
-			usr.set_name(usr.name)
+					src.overlays+=I
+			src.set_name(usr.name)
 			if(usr.hair!=null&&usr.hair_color!=null)
 				var/image/I=image(usr.hair)
 				I.icon+=usr.hair_color
-				usr.overlays+=I
+				src.overlays+=I
+			if(usr.rogue)
+				var/image/I=image('PvP.dmi')
+				I.icon_state="pvp"
+				src.overlays+=I
 		//	var/obj/B=new usr.hair
 		//	usr.overlays+=B
 obj

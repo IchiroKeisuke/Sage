@@ -90,6 +90,24 @@ obj
 					overlay_obj=new/obj/HUD/bars/energy()
 				//	overlays+=overlay_obj
 					update_bar(40,"EP:40/100")
+		PvP
+			icon='PvP.dmi'
+			icon_state="peace"
+			screen_loc="EAST:-16,SOUTH:5"
+			layer=100
+			var
+				cd=0
+			Click()
+				if(cd>world.time)return
+				switch(src.icon_state)
+					if("peace")
+						src.icon_state="rogue"
+						usr.rogue=1
+					else
+						usr.rogue=0
+						src.icon_state="peace"
+				src.cd=world.time+200
+				usr.redraw_character()
 		location
 			icon='Location.dmi'
 			New()
@@ -132,12 +150,17 @@ mob
 			HUD/bars/healthbar
 			HUD/bars/energybar
 			bars
+			pvp_toggle
 	proc
 		create_HUD()
 			create_location()
 			create_hotslots()
 			create_bars()
+			create_pvp_toggle()
 			refresh_location()
+		create_pvp_toggle()
+			pvp_toggle=new/obj/HUD/PvP()
+			client.screen+=pvp_toggle
 		create_bars()
 			bars=new/obj/HUD/bars()
 			bars.screen_loc="7:16,1:32"

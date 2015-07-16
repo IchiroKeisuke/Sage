@@ -6,10 +6,10 @@ mob
 			O.maptext={"<SPAN style="color:white;font-family:calibri;">[A]</SPAN>"}
 			O.maptext_width=length(A)*9
 			O.maptext_height=64
-			O.pixel_y=32
-			O.pixel_x=-length(A)*1
+			O.pixel_y=-20
+			O.pixel_x=-length(A)*1.5+8
 			O.layer=89
-			O.alpha=150
+			O.alpha=100
 			src.overlays+=O
 
 

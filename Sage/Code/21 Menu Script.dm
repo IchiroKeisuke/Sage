@@ -51,35 +51,52 @@ turf
 			layer=90
 		bg
 			layer=90
-			icon='Title.dmi'
-			pixel_y=-8
+			icon=null
+		//	icon='Title.dmi'
+			//pixel_y=-8
 			New()
-				..()
+		/*		..()
 				//alpha=240
 				var/obj/O=new/obj()
 				O.layer=91
-				O.maptext={"<font size=1><font color=white><b>Recent News</b>\n \n <font color=white>Alpha 1.0.0 Released! \n\n <font color=yellow>Welcome back to Sage!"}
+				O.maptext={"<font color=white><b>Bulletin</b>\n \n <font color=blue>Alpha 1.0.0 Released! \n\n <font color=yellow>Welcome back to Sage!"}
 				O.maptext_width=300
-				O.maptext_height=160
+				O.maptext_height=240
 				O.pixel_x=8
-				O.pixel_y=50
-				src.overlays+=O
+				O.pixel_y=90
+				src.overlays+=O*/
 			/*	var/obj/OO=new/obj()
-				OO.layer=91
-				OO.maptext="<font size=5><center><font color=black>Sage"
-				OO.maptext_width=460
-				OO.maptext_height=160
-				OO.pixel_x=50
-				OO.pixel_y=300
+				OO.layer=90
+				OO.maptext={"<font color=black><b>Bulletin</b>\n \n <font color=black>Alpha 1.0.0 Released! \n\n <font color=black>Welcome back to Sage!"}
+				OO.maptext_width=300
+				OO.maptext_height=240
+				OO.pixel_x=7
+				OO.pixel_y=90
 				src.overlays+=OO
 				var/obj/OOO=new/obj()
-				OOO.layer=91
-				OOO.maptext="<font size=3><u><font color=black><b>Build 0.5.3"
-				OOO.maptext_width=460
-				OOO.maptext_height=160
-				OOO.pixel_x=-150
-				OOO.pixel_y=270
-				src.overlays+=OOO*/
+				OOO.layer=90
+				OOO.maptext={"<font color=black><b>Bulletin</b>\n \n <font color=black>Alpha 1.0.0 Released! \n\n <font color=black>Welcome back to Sage!"}
+				OOO.maptext_width=300
+				OOO.maptext_height=240
+				OOO.pixel_x=9
+				OOO.pixel_y=90
+				src.overlays+=OOO
+				var/obj/OOOO=new/obj()
+				OOOO.layer=90
+				OOOO.maptext={"<font color=black><b>Bulletin</b>\n \n <font color=black>Alpha 1.0.0 Released! \n\n <font color=black>Welcome back to Sage!"}
+				OOOO.maptext_width=300
+				OOOO.maptext_height=240
+				OOOO.pixel_x=8
+				OOOO.pixel_y=91
+				src.overlays+=OOOO
+				var/obj/OOOOO=new/obj()
+				OOOOO.layer=90
+				OOOOO.maptext={"<font color=black><b>Recent News</b>\n \n <font color=black>Alpha 1.0.0 Released! \n\n <font color=black>Welcome back to Sage!"}
+				OOOOO.maptext_width=300
+				OOOOO.maptext_height=240
+				OOOOO.pixel_x=8
+				OOOOO.pixel_y=89
+				src.overlays+=OOOOO*/
 		selectable_bg
 			layer=91
 			icon='HUD.dmi'
@@ -266,9 +283,9 @@ turf
 				usr.fadein_music()
 		new_game
 			order=1
-			icon_state="button"
+			icon_state="null"
 			text_string="New Character"
-			pixel_y=-6
+		//	pixel_y=-6
 			Click()
 				..()
 				usr.simplefadeout(0,5)
@@ -318,9 +335,9 @@ turf
 
 		load_game
 			order=2
-			icon_state="button"
+			icon_state="null"
 			text_string="Load Character"
-			pixel_y=-6
+		//	pixel_y=-6
 			Click()
 				..()
 				if(usr.test_load())
@@ -333,9 +350,9 @@ turf
 					for(var/turf/selectable/character_customize/platform/P in range(5,usr))P.redraw_fake(usr)
 		del_game
 			order=3
-			icon_state="button"
+			icon_state="null"
 			text_string="Delete Character"
-			pixel_y=-6
+		//	pixel_y=-6
 		options
 			order=4
 			icon_state="button"

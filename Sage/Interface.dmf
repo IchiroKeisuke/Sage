@@ -2664,8 +2664,8 @@ window "Stats"
 window "default"
 	elem "default"
 		type = MAIN
-		pos = 203,0
-		size = 1061x798
+		pos = 281,0
+		size = 885x581
 		anchor1 = none
 		anchor2 = none
 		font-family = ""
@@ -2703,8 +2703,8 @@ window "default"
 		on-close = ""
 	elem "button16"
 		type = BUTTON
-		pos = 1028,0
-		size = 36x36
+		pos = 857,0
+		size = 31x26
 		anchor1 = 97,0
 		anchor2 = 100,5
 		font-family = "Calibri"
@@ -2722,7 +2722,7 @@ window "default"
 		saved-params = "is-checked"
 		on-size = ""
 		text = ""
-		image = 'Help Icon.dmi'
+		image = ""
 		command = "guide"
 		is-flat = true
 		stretch = false
@@ -2731,8 +2731,8 @@ window "default"
 		button-type = pushbutton
 	elem "button8"
 		type = BUTTON
-		pos = 1028,544
-		size = 36x36
+		pos = 857,397
+		size = 31x25
 		anchor1 = 97,68
 		anchor2 = 100,73
 		font-family = "Calibri"
@@ -2759,8 +2759,8 @@ window "default"
 		button-type = pushbutton
 	elem "button7"
 		type = BUTTON
-		pos = 1028,616
-		size = 36x36
+		pos = 857,449
+		size = 31x25
 		anchor1 = 97,77
 		anchor2 = 100,82
 		font-family = "Calibri"
@@ -2787,8 +2787,8 @@ window "default"
 		button-type = pushbutton
 	elem "button5"
 		type = BUTTON
-		pos = 591,782
-		size = 54x18
+		pos = 492,569
+		size = 45x14
 		anchor1 = 56,98
 		anchor2 = 61,100
 		font-family = "Calibri"
@@ -2815,8 +2815,8 @@ window "default"
 		button-type = pushbutton
 	elem "button27"
 		type = BUTTON
-		pos = 797,782
-		size = 62x18
+		pos = 665,569
+		size = 51x14
 		anchor1 = 75,98
 		anchor2 = 81,100
 		font-family = "Calibri"
@@ -2843,8 +2843,8 @@ window "default"
 		button-type = pushbutton
 	elem "exp_bar"
 		type = BAR
-		pos = -8,768
-		size = 1024x8
+		pos = -8,559
+		size = 855x6
 		anchor1 = 0,96
 		anchor2 = 96,97
 		font-family = ""
@@ -2871,8 +2871,8 @@ window "default"
 		on-change = ""
 	elem "button19"
 		type = BUTTON
-		pos = 990,782
-		size = 72x18
+		pos = 827,569
+		size = 59x14
 		anchor1 = 93,98
 		anchor2 = 100,100
 		font-family = "Calibri"
@@ -2899,8 +2899,8 @@ window "default"
 		button-type = pushbutton
 	elem "button18"
 		type = BUTTON
-		pos = 926,782
-		size = 62x18
+		pos = 772,569
+		size = 53x14
 		anchor1 = 87,98
 		anchor2 = 93,100
 		font-family = "Calibri"
@@ -2927,8 +2927,8 @@ window "default"
 		button-type = pushbutton
 	elem "button3"
 		type = BUTTON
-		pos = 861,782
-		size = 63x18
+		pos = 718,569
+		size = 52x14
 		anchor1 = 81,98
 		anchor2 = 87,100
 		font-family = "Calibri"
@@ -2955,8 +2955,8 @@ window "default"
 		button-type = pushbutton
 	elem "button10"
 		type = BUTTON
-		pos = 1026,690
-		size = 36x38
+		pos = 855,503
+		size = 31x27
 		anchor1 = 97,86
 		anchor2 = 100,91
 		font-family = "Calibri"
@@ -2983,8 +2983,8 @@ window "default"
 		button-type = pushbutton
 	elem "button9"
 		type = BUTTON
-		pos = 1026,651
-		size = 36x39
+		pos = 855,473
+		size = 31x30
 		anchor1 = 97,82
 		anchor2 = 100,86
 		font-family = "Calibri"
@@ -3011,8 +3011,8 @@ window "default"
 		button-type = pushbutton
 	elem "pvp_toggle"
 		type = BUTTON
-		pos = 1028,580
-		size = 36x36
+		pos = 857,422
+		size = 31x27
 		anchor1 = 97,73
 		anchor2 = 100,77
 		font-family = "Calibri"
@@ -3039,8 +3039,8 @@ window "default"
 		button-type = pushbutton
 	elem "button6"
 		type = BUTTON
-		pos = 1026,728
-		size = 36x37
+		pos = 855,530
+		size = 31x26
 		anchor1 = 97,91
 		anchor2 = 100,96
 		font-family = "Calibri"
@@ -3067,8 +3067,8 @@ window "default"
 		button-type = pushbutton
 	elem "button2"
 		type = BUTTON
-		pos = 697,782
-		size = 99x18
+		pos = 581,569
+		size = 83x14
 		anchor1 = 66,98
 		anchor2 = 75,100
 		font-family = "Calibri"
@@ -3095,8 +3095,8 @@ window "default"
 		button-type = pushbutton
 	elem "button1"
 		type = BUTTON
-		pos = 647,782
-		size = 49x18
+		pos = 539,569
+		size = 41x14
 		anchor1 = 61,98
 		anchor2 = 66,100
 		font-family = "Calibri"
@@ -3123,8 +3123,8 @@ window "default"
 		button-type = pushbutton
 	elem "input1"
 		type = INPUT
-		pos = 2,780
-		size = 582x20
+		pos = 2,567
+		size = 485x16
 		anchor1 = 0,98
 		anchor2 = 55,100
 		font-family = "Calibri"
@@ -3148,11 +3148,11 @@ window "default"
 	elem "map1"
 		type = MAP
 		pos = 0,0
-		size = 1016x760
+		size = 847x553
 		anchor1 = 0,0
 		anchor2 = 96,95
-		font-family = "Arial"
-		font-size = 8
+		font-family = "@Microsoft YaHei"
+		font-size = 9
 		font-style = ""
 		text-color = none
 		background-color = none

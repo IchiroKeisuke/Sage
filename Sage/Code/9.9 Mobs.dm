@@ -19,6 +19,7 @@ mob
 	combat_ready
 		str=2
 		step_size=5
+		rogue=1
 		var
 			awake=0
 			obj/system/mob_spawner/spawner
