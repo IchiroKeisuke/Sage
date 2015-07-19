@@ -30,7 +30,7 @@ mob
 		usr.register_logout()
 	proc
 		spawn_character()
-			src.loc=locate(10,7,1)
+			src.loc=locate(11,7,1)
 		mechanics()
 			src.create_inventory()
 			src.create_charactersheet()

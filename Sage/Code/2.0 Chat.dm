@@ -29,6 +29,15 @@ mob
 			else
 				return x
 	verb
+		toggle_emoticons()
+			set hidden=1
+			switch(emoticons)
+				if(1)
+					emoticons=0
+					usr << "<font color=yellow>Emoticons Disabled."
+				else
+					emoticons=1
+					usr << "<font color=yellow>Emoticons Enabled."
 		toggle_chat()
 			set category=null
 			switch(chat_type)

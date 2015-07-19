@@ -52,19 +52,19 @@ turf
 		bg
 			layer=90
 			icon=null
-		//	icon='Title.dmi'
+			icon='Title.dmi'
 			//pixel_y=-8
 			New()
-		/*		..()
+				..()
 				//alpha=240
 				var/obj/O=new/obj()
 				O.layer=91
-				O.maptext={"<font color=white><b>Bulletin</b>\n \n <font color=blue>Alpha 1.0.0 Released! \n\n <font color=yellow>Welcome back to Sage!"}
+				O.maptext={"<font color=white><b>Bulletin</b>\n \n <font color=#005599>Alpha 1.0.0 Released! \n\n <font color=yellow>Welcome back to Sage!"}
 				O.maptext_width=300
 				O.maptext_height=240
 				O.pixel_x=8
-				O.pixel_y=90
-				src.overlays+=O*/
+				O.pixel_y=80
+				src.overlays+=O
 			/*	var/obj/OO=new/obj()
 				OO.layer=90
 				OO.maptext={"<font color=black><b>Bulletin</b>\n \n <font color=black>Alpha 1.0.0 Released! \n\n <font color=black>Welcome back to Sage!"}
@@ -284,7 +284,7 @@ turf
 		new_game
 			order=1
 			icon_state="null"
-			text_string="New Character"
+			text_string="Begin Game"
 		//	pixel_y=-6
 			Click()
 				..()
@@ -336,7 +336,7 @@ turf
 		load_game
 			order=2
 			icon_state="null"
-			text_string="Load Character"
+			text_string="Continue"
 		//	pixel_y=-6
 			Click()
 				..()
@@ -351,7 +351,7 @@ turf
 		del_game
 			order=3
 			icon_state="null"
-			text_string="Delete Character"
+			text_string="Delete"
 		//	pixel_y=-6
 		options
 			order=4

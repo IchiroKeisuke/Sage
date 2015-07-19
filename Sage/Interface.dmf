@@ -75,6 +75,15 @@ menu "menu"
 		is-disabled = false
 		saved-params = "is-checked"
 	elem 
+		name = "Toggle Emoticons"
+		command = "toggle-emoticons"
+		category = "Settings"
+		is-checked = false
+		can-check = false
+		group = ""
+		is-disabled = false
+		saved-params = "is-checked"
+	elem 
 		name = "Display"
 		command = ""
 		category = ""
