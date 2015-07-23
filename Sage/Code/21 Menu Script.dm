@@ -244,25 +244,25 @@ turf
 				var/obj/O=new/obj()
 				O.layer=src.layer+1
 				O.pixel_x=4
-				O.pixel_y=4
-				O.maptext_width=150
-				O.maptext_height=96
-				O.maptext="<font color=#000000>[text_string]"
+				O.pixel_y=-120
+				O.maptext_width=120
+				O.maptext_height=256
+				O.maptext="<font color=#000000>[text_string] "
 				src.pixel_x=0
 				src.overlays+=O
 
 			Samurai
 				icon_state="samurai"
-				text_string="<b>Samurai</b>\nThe Samurai is an close range warrior who uses speed and strength to crush his enemies."
+				text_string="<b>Samurai</b>\nThe Samurai is a legendary warrior of the sengoku era. The Samurai traditionally uses a katana blade and close ranged attacks to fight off enemies. Samurai Chi techniques lack range but are powerful. \n"
 			Archer
 				icon_state="archer"
-				text_string="<font color=#999999><b>Archer</b>\nThe Archer is an long range warrior who shoots powerful projectiles to pierce his enemies."
+				text_string="<b>Archer</b>\nThe Archer is a revered warrior of the sengoku era. The archer typically uses a bow and arrow - but skilled archers carry throwing knives and know basic martial arts. Archer Chi techniques are long ranged but lack power."
 			Shinobi
 				icon_state="shinobi"
-				text_string="<b>Shinobi</b>\nThe Shinobi is an specialized assasin warrior who uses special skills to take down enemies."
+				text_string="<b>Shinobi</b>\nThe Shinobi is a specialized assasin warrior who uses special skills to take down enemies. By using poison and martial arts, the shinobi is to be feared. Shinboi chi techniques are versatile but lack power. \n"
 			Taoist
 				icon_state="taoist"
-				text_string="<font color=#999999><b>Taoist</b>\nThe Taoist is an energy warrior who uses seals and magic to overwhelm his enemies."
+				text_string="<b>Taoist</b>\nThe Taoist is an energy warrior who uses seals and magic to overwhelm his enemies. The Taoist carries no blade and relies soley on his ability to manipulate chi but has superior energy attacks. \n \n  "
 		confirm_load
 			icon_state="button"
 			pixel_x=6
@@ -292,7 +292,7 @@ turf
 				sleep(5)
 				usr.simplefadein(0,5)
 				usr.set_name(usr.name)
-				usr.loc=locate(10,47,1)
+				usr.loc=locate(11,47,1)
 		/*		usr.mechanics()
 				usr.login_message()
 				usr.starter_clothes()
@@ -325,6 +325,7 @@ turf
 				usr.test_save()
 				usr.logged=1
 				spawn(0)
+					usr.play_sound('BEGINJOURNEY.wav')
 					usr.fadeout_music()
 					usr.play_music('MusicA.ogg')
 					usr.song.volume=0
@@ -352,6 +353,8 @@ turf
 			order=3
 			icon_state="null"
 			text_string="Delete"
+			Click()
+				usr.play_sound('MAINMENU.wav')
 		//	pixel_y=-6
 		options
 			order=4

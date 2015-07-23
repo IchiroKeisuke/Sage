@@ -72,27 +72,27 @@ obj
 		class
 			samurai
 				pulsar
-					name="Pulsar"
+					name="Turtle Shell : Rupture"
 					icon_state="pulsar"
 					skill="Pulsar"
-					learn_message="You have learned how to release a small shockwave of energy.(Pulsar)"
+					learn_message="You have learned Turtle Shell : Rupture! This samurai chi technique rapidly expands and ruptures your turtle shell shield and releases a shockwave from your body that will crush nearby enemies. This technique requires that you have an active turtle shell shield and does damage based on the amount of shield energy left."
 				flicker
 					name="Body Flicker"
 					icon_state="flicker"
 					skill="Flicker"
-					learn_message="You have learned how to use your chi for a short burst of speed."
+					learn_message="You have learned how to utilize your internal energy in order to give you a short, powerful boost of agility."
 				battle_scar
 					name="Battle Scar"
 					icon_state="battle scar"
 					skill="Battle Scar"
-					learn_message="You can now release a wave of energy with your arm.(Battle Scar)."
+					learn_message="You have learned Heavens Gale! This samurai chi technique lets you close your chakras and bottle up your energy then re-open them quickly to create a chi shockwave that forces enemies back."
 				flash_assult
-					name="Flash Assult"
+					name="Heavens Fury"
 					icon_state="flash assult"
 					skill="Flash Assult"
-					learn_message="You can now unleash a devasting blow within a flash."
+					learn_message="You have learned Heavens Fury! By taking advantage of your bodies physical stanima and strength you can now unleash a series of melee attacks in rapid sucession."
 				strike
-					name="Strike"
+					name="Heavy Strike"
 					icon_state="strike"
 					skill="Strike"
-					learn_message="You have learned strike! This technique releases a focused burst of chi from your arm."
+					learn_message="You have learned Heavy Strike! This samurai technique relies on relaxing then tensing your arm in order to focus all of your strength into a single strike."
